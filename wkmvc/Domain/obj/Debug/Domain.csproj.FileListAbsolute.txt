@@ -1,0 +1,6 @@
+E:\张伟\MVC从入门到精通\wkmvc\Domain\bin\Debug\Domain.dll
+E:\张伟\MVC从入门到精通\wkmvc\Domain\bin\Debug\Domain.pdb
+E:\张伟\MVC从入门到精通\wkmvc\Domain\obj\Debug\Domain.csprojAssemblyReference.cache
+E:\张伟\MVC从入门到精通\wkmvc\Domain\obj\Debug\Domain.csproj.CoreCompileInputs.cache
+E:\张伟\MVC从入门到精通\wkmvc\Domain\obj\Debug\Domain.dll
+E:\张伟\MVC从入门到精通\wkmvc\Domain\obj\Debug\Domain.pdb

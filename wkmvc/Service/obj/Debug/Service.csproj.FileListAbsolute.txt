@@ -1,0 +1,6 @@
+E:\张伟\MVC从入门到精通\wkmvc\Service\bin\Debug\Service.dll
+E:\张伟\MVC从入门到精通\wkmvc\Service\bin\Debug\Service.pdb
+E:\张伟\MVC从入门到精通\wkmvc\Service\obj\Debug\Service.csprojAssemblyReference.cache
+E:\张伟\MVC从入门到精通\wkmvc\Service\obj\Debug\Service.csproj.CoreCompileInputs.cache
+E:\张伟\MVC从入门到精通\wkmvc\Service\obj\Debug\Service.dll
+E:\张伟\MVC从入门到精通\wkmvc\Service\obj\Debug\Service.pdb
