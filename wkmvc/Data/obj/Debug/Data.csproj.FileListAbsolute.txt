@@ -1,0 +1,14 @@
+E:\张伟\MVC从入门到精通\wkmvc\Data\bin\Debug\Data.dll
+E:\张伟\MVC从入门到精通\wkmvc\Data\bin\Debug\Data.pdb
+E:\张伟\MVC从入门到精通\wkmvc\Data\obj\Debug\Data.csprojAssemblyReference.cache
+E:\张伟\MVC从入门到精通\wkmvc\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+E:\张伟\MVC从入门到精通\wkmvc\Data\obj\Debug\Data.dll
+E:\张伟\MVC从入门到精通\wkmvc\Data\obj\Debug\Data.pdb
+E:\张伟\MVC从入门到精通\wkmvc\Data\bin\Debug\EntityFramework.dll
+E:\张伟\MVC从入门到精通\wkmvc\Data\bin\Debug\EntityFramework.SqlServer.dll
+E:\张伟\MVC从入门到精通\wkmvc\Data\bin\Debug\EntityFramework.xml
+E:\张伟\MVC从入门到精通\wkmvc\Data\bin\Debug\EntityFramework.SqlServer.xml
+E:\张伟\MVC从入门到精通\wkmvc\Data\obj\Debug\Data.csproj.CopyComplete
+E:\张伟\MVC从入门到精通\wkmvc\Data\bin\Debug\Common.dll
+E:\张伟\MVC从入门到精通\wkmvc\Data\bin\Debug\Newtonsoft.Json.dll
+E:\张伟\MVC从入门到精通\wkmvc\Data\bin\Debug\Common.pdb

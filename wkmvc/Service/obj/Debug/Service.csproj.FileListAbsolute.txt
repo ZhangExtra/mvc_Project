@@ -4,3 +4,13 @@ E:\张伟\MVC从入门到精通\wkmvc\Service\obj\Debug\Service.csprojAssemblyRe
 E:\张伟\MVC从入门到精通\wkmvc\Service\obj\Debug\Service.csproj.CoreCompileInputs.cache
 E:\张伟\MVC从入门到精通\wkmvc\Service\obj\Debug\Service.dll
 E:\张伟\MVC从入门到精通\wkmvc\Service\obj\Debug\Service.pdb
+E:\张伟\MVC从入门到精通\wkmvc\Service\bin\Debug\Service.dll.config
+E:\张伟\MVC从入门到精通\wkmvc\Service\bin\Debug\Common.dll
+E:\张伟\MVC从入门到精通\wkmvc\Service\bin\Debug\Domain.dll
+E:\张伟\MVC从入门到精通\wkmvc\Service\bin\Debug\EntityFramework.dll
+E:\张伟\MVC从入门到精通\wkmvc\Service\bin\Debug\EntityFramework.SqlServer.dll
+E:\张伟\MVC从入门到精通\wkmvc\Service\bin\Debug\Common.pdb
+E:\张伟\MVC从入门到精通\wkmvc\Service\bin\Debug\Domain.pdb
+E:\张伟\MVC从入门到精通\wkmvc\Service\bin\Debug\EntityFramework.xml
+E:\张伟\MVC从入门到精通\wkmvc\Service\bin\Debug\EntityFramework.SqlServer.xml
+E:\张伟\MVC从入门到精通\wkmvc\Service\obj\Debug\Service.csproj.CopyComplete
