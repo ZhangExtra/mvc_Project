@@ -17,7 +17,7 @@ namespace WebPage
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional },
-                constraints: new string[] { "WebPage.Controllers" }
+                namespaces: new string[] { "WebPage.Controllers" }
             );
         }
     }

@@ -1,0 +1,66 @@
+﻿@model Domain.Entity.SysUser
+
+@{
+    ViewBag.Title = "后台登录";
+}
+
+<h2>登录</h2>
+<div>
+    @using (Ajax.BeginForm("Login", null, new AjaxOptions()
+    {
+        HttpMethod = "POST",
+        OnBegin = "dig.Loading",
+        OnSuccess = "dig.Success",
+        OnFailure = "dig.Failure",
+        OnComplete = "dig.Complete"
+    }, new { @class = "form-signin" }))
+    {
+        @Html.AntiForgeryToken();
+
+        @Html.TextBoxFor(model=>model.Account,new {
+                @class = "form-control",
+                @placeholder = "登录用户名",
+                @maxlength = 15,
+                @required = "required"
+        })
+
+        @Html.PasswordFor(model=>model.PassWord,new {
+            @class = "form-control",
+            @placeholder = "登录用户名",
+            @maxlength = 15,
+            @required = "required"
+        })
+        <button type="submit" id="login-button">登录</button>
+
+    }
+</div>
+<script type="text/javascript" src="/Content/js/jquery.min.js"></script>
+48
+<script type="text/javascript" src="/Content/js/jquery.unobtrusive-ajax.min.js"></script>
+49
+<script type="text/javascript">
+
+    var dig = {
+        Loading: function () {
+            $("#login-button").attr("disabled", "disabled");;
+        },
+        Success: function (result) {
+            if (result.Status == "y") {
+                alert(result.Msg)
+            } else {
+                alert(result.Msg);
+                dig.Complete();
+            }
+        },
+        Failure: function () {
+            alert(result.Msg);
+            dig.Complete();
+        },
+        Complete: function () {
+            $("#login-button").attr("disabled", false);
+        },
+        ErrorMsg: function (msg) {
+            alert(msg);
+        }
+    };
+</script>

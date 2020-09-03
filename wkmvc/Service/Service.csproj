@@ -51,12 +51,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IService\SysManage\IUserManage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\IRepository.cs" />
+    <Compile Include="Repository\RepositoryBase.cs" />
+    <Compile Include="ServiceImp\SysManage\UserManage.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Common\Common.csproj">
       <Project>{604f12ad-a7e2-4619-bad3-46c85664f529}</Project>
       <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Data\Data.csproj">
+      <Project>{0c5f8612-7062-42c4-b9a6-2ef7e74280b2}</Project>
+      <Name>Data</Name>
     </ProjectReference>
     <ProjectReference Include="..\Domain\Domain.csproj">
       <Project>{6637e722-2fcb-4020-8863-8aee3b0adda8}</Project>
@@ -64,8 +72,12 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
+    <Folder Include="IService\ComManage\" />
+    <Folder Include="ServiceImp\ComManage\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Config\ComService.xml" />
+    <EmbeddedResource Include="Config\Service.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
