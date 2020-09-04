@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Common;
 using Data;
-using Domain.Entity;
+using Domain;
 namespace Service.IService
 {
     public interface IUserManage:IRepository<SysUser>

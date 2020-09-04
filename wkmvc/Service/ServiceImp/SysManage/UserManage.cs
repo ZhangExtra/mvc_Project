@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Data;
-using Domain.Entity;
+using Domain;
 namespace Service.ServiceImp
 {
     public class UserManage : RepositoryBase<SysUser>, IService.IUserManage

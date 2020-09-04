@@ -1,0 +1,13 @@
+E:\张伟\MVC从入门到精通\wkmvc\Mapping\bin\Debug\Mapping.dll
+E:\张伟\MVC从入门到精通\wkmvc\Mapping\bin\Debug\Mapping.pdb
+E:\张伟\MVC从入门到精通\wkmvc\Mapping\bin\Debug\Domain.dll
+E:\张伟\MVC从入门到精通\wkmvc\Mapping\bin\Debug\EntityFramework.dll
+E:\张伟\MVC从入门到精通\wkmvc\Mapping\bin\Debug\EntityFramework.SqlServer.dll
+E:\张伟\MVC从入门到精通\wkmvc\Mapping\bin\Debug\Domain.pdb
+E:\张伟\MVC从入门到精通\wkmvc\Mapping\bin\Debug\EntityFramework.xml
+E:\张伟\MVC从入门到精通\wkmvc\Mapping\bin\Debug\EntityFramework.SqlServer.xml
+E:\张伟\MVC从入门到精通\wkmvc\Mapping\obj\Debug\Mapping.csprojAssemblyReference.cache
+E:\张伟\MVC从入门到精通\wkmvc\Mapping\obj\Debug\Mapping.csproj.CoreCompileInputs.cache
+E:\张伟\MVC从入门到精通\wkmvc\Mapping\obj\Debug\Mapping.csproj.CopyComplete
+E:\张伟\MVC从入门到精通\wkmvc\Mapping\obj\Debug\Mapping.dll
+E:\张伟\MVC从入门到精通\wkmvc\Mapping\obj\Debug\Mapping.pdb

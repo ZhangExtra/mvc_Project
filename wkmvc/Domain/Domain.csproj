@@ -51,8 +51,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Mapping\SysUserMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Entity\SysCode.cs" />
     <Compile Include="Entity\SysUser.cs" />
   </ItemGroup>
   <ItemGroup />

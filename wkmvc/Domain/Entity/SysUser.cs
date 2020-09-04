@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.Entity
+namespace Domain
 {
     public class SysUser
     {
@@ -21,9 +21,9 @@ namespace Domain.Entity
         public string Levels { get; set; }
         public string DeptId { get; set; }
         public string LastLoginIp { get; set; }
-        public string CreateUser { get; set; }
+        public int CreateUserId { get; set; }
         public DateTime CreateDate { get; set; }
-        public string UpdateUser { get; set; }
+        public int UpdateUserId { get; set; }
         public DateTime UpdateDate { get; set; }
     }
 }

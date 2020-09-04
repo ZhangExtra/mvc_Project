@@ -21,7 +21,7 @@ namespace WebPage.Areas.SysManage.Controllers
         {
             return View();
         }
-        public ActionResult Login(Domain.Entity.SysUser item)
+        public ActionResult Login(Domain.SysUser item)
         {
             var json = new JsonHelper() {Msg="登录成功",Status="n" };
             try

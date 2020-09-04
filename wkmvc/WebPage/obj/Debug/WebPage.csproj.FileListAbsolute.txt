@@ -119,3 +119,5 @@ E:\张伟\MVC从入门到精通\wkmvc\WebPage\bin\zh-Hans\System.Web.WebPages.Ra
 E:\张伟\MVC从入门到精通\wkmvc\WebPage\obj\Debug\WebPage.csproj.CopyComplete
 E:\张伟\MVC从入门到精通\wkmvc\WebPage\obj\Debug\WebPage.dll
 E:\张伟\MVC从入门到精通\wkmvc\WebPage\obj\Debug\WebPage.pdb
+E:\张伟\MVC从入门到精通\wkmvc\WebPage\bin\Mapping.dll
+E:\张伟\MVC从入门到精通\wkmvc\WebPage\bin\Mapping.pdb

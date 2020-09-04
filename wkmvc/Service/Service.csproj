@@ -53,8 +53,6 @@
   <ItemGroup>
     <Compile Include="IService\SysManage\IUserManage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repository\IRepository.cs" />
-    <Compile Include="Repository\RepositoryBase.cs" />
     <Compile Include="ServiceImp\SysManage\UserManage.cs" />
   </ItemGroup>
   <ItemGroup>
