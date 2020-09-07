@@ -10,4 +10,3 @@ E:\张伟\MVC从入门到精通\wkmvc\Common\obj\Debug\Common.csproj.CoreCompile
 E:\张伟\MVC从入门到精通\wkmvc\Common\obj\Debug\Common.csproj.CopyComplete
 E:\张伟\MVC从入门到精通\wkmvc\Common\obj\Debug\Common.dll
 E:\张伟\MVC从入门到精通\wkmvc\Common\obj\Debug\Common.pdb
-E:\张伟\MVC从入门到精通\wkmvc\Common\obj\Debug\Common.csprojAssemblyReference.cache
