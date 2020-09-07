@@ -721,38 +721,38 @@ namespace Common
 
             return dic;
         }
-        ///<summary>
-        /// 返回 List《Enums.EnumsClass》 枚举值、名称、描述
-        ///</summary>
-        public static List<Enums.EnumsClass> BindEnumsList(Type enumType)
-        {
-            var list = new List<Enums.EnumsClass>();
-            FieldInfo[] fieldinfos = enumType.GetFields();
-            var enumvalue = Enum.GetValues(enumType);
-            foreach (FieldInfo field in fieldinfos)
-            {
-                if (field.FieldType.IsEnum)
-                {
-                    int ev = -1;
-                    Object[] objs = field.GetCustomAttributes(typeof(DescriptionAttribute), false);
-                    foreach (int item in enumvalue)
-                    {
-                        if (Enum.GetName(enumType, item) == field.Name)
-                        {
-                            ev = item;
-                            break;
-                        }
-                    }
-                    list.Add(new Enums.EnumsClass
-                    {
-                        Name = field.Name,
-                        Value = ev,
-                        Text = ((DescriptionAttribute)objs[0]).Description
-                    });
-                }
-            }
-            return list;
-        }
+        /////<summary>
+        ///// 返回 List《Enums.EnumsClass》 枚举值、名称、描述
+        /////</summary>
+        //public static List<Enums.EnumsClass> BindEnumsList(Type enumType)
+        //{
+        //    var list = new List<Enums.EnumsClass>();
+        //    FieldInfo[] fieldinfos = enumType.GetFields();
+        //    var enumvalue = Enum.GetValues(enumType);
+        //    foreach (FieldInfo field in fieldinfos)
+        //    {
+        //        if (field.FieldType.IsEnum)
+        //        {
+        //            int ev = -1;
+        //            Object[] objs = field.GetCustomAttributes(typeof(DescriptionAttribute), false);
+        //            foreach (int item in enumvalue)
+        //            {
+        //                if (Enum.GetName(enumType, item) == field.Name)
+        //                {
+        //                    ev = item;
+        //                    break;
+        //                }
+        //            }
+        //            list.Add(new Enums.EnumsClass
+        //            {
+        //                Name = field.Name,
+        //                Value = ev,
+        //                Text = ((DescriptionAttribute)objs[0]).Description
+        //            });
+        //        }
+        //    }
+        //    return list;
+        //}
 
         #endregion
 

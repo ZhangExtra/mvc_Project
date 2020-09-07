@@ -52,6 +52,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SysCodeAreaMap.cs" />
+    <Compile Include="SysCodeMap.cs" />
+    <Compile Include="SysDepartmentMap.cs" />
+    <Compile Include="SysModuleMap.cs" />
+    <Compile Include="SysPermissionMap.cs" />
+    <Compile Include="SysPostMap.cs" />
+    <Compile Include="SysRoleMap.cs" />
+    <Compile Include="SysSystemMap.cs" />
+    <Compile Include="SysUserInfoMap.cs" />
     <Compile Include="SysUserMap.cs" />
   </ItemGroup>
   <ItemGroup>

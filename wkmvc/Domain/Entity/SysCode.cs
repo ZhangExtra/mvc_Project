@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Domain
 {
-    public class SysCode
+    public class SysCode : ICreationAudited, IDeleteAudited, IModificationAudited
     {
         public int Id { get; set; }
         /// <summary>
@@ -39,8 +39,10 @@ namespace Domain
         public string Remark { get; set; }
         public int CreateUserId { get; set; }
         public DateTime CreateDate { get; set; }
-        public int UpdateUserId { get; set; }
-        public DateTime UpdateDate { get; set; }
-
+        public int? UpdateUserId { get; set; }
+        public DateTime ? UpdateDate { get; set; }
+        public bool? DeleteMark { get; set; }
+        public int? DeleteUserId { get; set; }
+        public DateTime? DeleteDate { get; set; }
     }
 }

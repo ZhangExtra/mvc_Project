@@ -14,3 +14,7 @@ E:\张伟\MVC从入门到精通\wkmvc\Data\bin\Debug\log4net.dll
 E:\张伟\MVC从入门到精通\wkmvc\Data\bin\Debug\Newtonsoft.Json.dll
 E:\张伟\MVC从入门到精通\wkmvc\Data\bin\Debug\Common.pdb
 E:\张伟\MVC从入门到精通\wkmvc\Data\bin\Debug\log4net.xml
+E:\张伟\MVC从入门到精通\wkmvc\Data\bin\Debug\Mapping.dll
+E:\张伟\MVC从入门到精通\wkmvc\Data\bin\Debug\Domain.dll
+E:\张伟\MVC从入门到精通\wkmvc\Data\bin\Debug\Mapping.pdb
+E:\张伟\MVC从入门到精通\wkmvc\Data\bin\Debug\Domain.pdb

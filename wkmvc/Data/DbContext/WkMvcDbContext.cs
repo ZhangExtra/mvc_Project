@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data.Entity;
 using System.Reflection;
 using System.Data.Entity.ModelConfiguration;
+using System.Data.Entity.ModelConfiguration.Conventions;
 
 namespace Data
 {
@@ -24,6 +25,7 @@ namespace Data
             //modelBuilder.Configurations.Add();
             //modelBuilder.Entity<T>().ToTable("");
             #endregion
+            modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();//全局关闭级联删除
             string assembleFileName = Assembly.GetExecutingAssembly().CodeBase.Replace("Data.DLL", "Mapping.DLL").Replace("file:///", "");
             Assembly asm = Assembly.LoadFile(assembleFileName);
             var typesToRegister = asm.GetTypes()

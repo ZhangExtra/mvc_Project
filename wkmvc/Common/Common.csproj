@@ -54,18 +54,26 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AjaxResult.cs" />
+    <Compile Include="BindDataControl.cs" />
+    <Compile Include="CacheHelper.cs" />
+    <Compile Include="CookieHelper.cs" />
     <Compile Include="CryptHelper\AESCrypt.cs" />
     <Compile Include="CryptHelper\DESEncrypt.cs" />
     <Compile Include="CryptHelper\HashEncode.cs" />
     <Compile Include="CryptHelper\RSACryption.cs" />
     <Compile Include="Enums\EnumsClass.cs" />
+    <Compile Include="ICache.cs" />
+    <Compile Include="JScript.cs" />
     <Compile Include="JsonConverter.cs" />
     <Compile Include="JsonHelper.cs" />
     <Compile Include="JsonSplit.cs" />
     <Compile Include="LogHelper.cs" />
     <Compile Include="PageCollection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryString.cs" />
     <Compile Include="RegexHelper.cs" />
+    <Compile Include="RupengPager.cs" />
+    <Compile Include="SessionHelper.cs" />
     <Compile Include="Tools.cs" />
     <Compile Include="Utils.cs" />
   </ItemGroup>
