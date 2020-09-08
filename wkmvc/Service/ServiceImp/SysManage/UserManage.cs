@@ -6,10 +6,14 @@ using System.Threading.Tasks;
 using Common;
 using Data;
 using Domain;
+using Service.IService;
+
 namespace Service.ServiceImp
 {
     public class UserManage : RepositoryBase<SysUser>, IService.IUserManage
     {
+        IDepartmentManage DepartmentManage { get; set; }
+        IPermissionManage PermissionManage { get; set; }
         /// <summary>
         /// 从cookie获取用户信息
         /// </summary>
@@ -43,7 +47,11 @@ namespace Service.ServiceImp
             }
             return null;
         }
-
+        /// <summary>
+        /// 根据用户构造用户基本信息
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
         public Account GetAccountByUser(SysUser user)
         {
             if (user == null) return null;
@@ -56,7 +64,7 @@ namespace Service.ServiceImp
             //用户岗位
             var post = user.Posts.ToList();
             //用户主部门
-            var dptinfo = new DepartmentManage().Get(p=>p.Id==user.DeptId);
+            var dptinfo = DepartmentManage.Get(p=>p.Id==user.DeptId);
             //用户模块
             var module = permission.Select(p =>p.Module).ToList().Distinct(new ModuleDistinct()).ToList();
             Account account = new Account()
@@ -86,7 +94,7 @@ namespace Service.ServiceImp
             //1、超管拥有所有权限
             if (IsAdmin(user.Id))
             {
-                return new PermissionManage().LoadListAll(null);
+                return PermissionManage.LoadListAll(null);
             }
             //2、普通用户，合并当前用户权限和角色权限
             var perlist = new List<Domain.SysPermission>();
@@ -99,10 +107,14 @@ namespace Service.ServiceImp
             return perlist;
         }
 
-
+        /// <summary>
+        /// 获取用户部门
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns></returns>
         public string GetUserDeptName(int userId)
         {
-            throw new NotImplementedException();
+            return "";
         }
 
         public string GetUserName(int userId)

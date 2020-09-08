@@ -1,66 +1,102 @@
-﻿@model Domain.SysUser
-
-@{
-    ViewBag.Title = "后台登录";
+﻿@{
+    Layout = null;
 }
-
-<h2>登录</h2>
-<div>
-    @using (Ajax.BeginForm("Login", null, new AjaxOptions()
-    {
-        HttpMethod = "POST",
-        OnBegin = "dig.Loading",
-        OnSuccess = "dig.Success",
-        OnFailure = "dig.Failure",
-        OnComplete = "dig.Complete"
-    }, new { @class = "form-signin" }))
-    {
-        @Html.AntiForgeryToken();
-
-        @Html.TextBoxFor(model=>model.Account,new {
-                @class = "form-control",
-                @placeholder = "登录用户名",
-                @maxlength = 15,
-                @required = "required"
-        })
-
-        @Html.PasswordFor(model=>model.PassWord,new {
-            @class = "form-control",
-            @placeholder = "登录用户名",
-            @maxlength = 15,
-            @required = "required"
-        })
-        <button type="submit" id="login-button">登录</button>
-
-    }
-</div>
-<script type="text/javascript" src="/Content/js/jquery.min.js"></script>
-48
-<script type="text/javascript" src="/Content/js/jquery.unobtrusive-ajax.min.js"></script>
-49
-<script type="text/javascript">
-
-    var dig = {
-        Loading: function () {
-            $("#login-button").attr("disabled", "disabled");;
-        },
-        Success: function (result) {
-            if (result.Status == "y") {
-                alert(result.Msg)
-            } else {
-                alert(result.Msg);
-                dig.Complete();
-            }
-        },
-        Failure: function () {
-            alert(result.Msg);
-            dig.Complete();
-        },
-        Complete: function () {
-            $("#login-button").attr("disabled", false);
-        },
-        ErrorMsg: function (msg) {
-            alert(msg);
-        }
-    };
-</script>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="/Content/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="/Content/css/font-awesome.css?v=4.4.0" rel="stylesheet">
+    <link href="/Content/css/animate.css" rel="stylesheet">
+    <link href="/Content/css/style.css?v=4.1.0" rel="stylesheet">
+    <script>if (window.top !== window.self) { window.top.location = window.location; }</script>
+</head>
+<body class="gray-bg">
+ 
+    <div class="middle-box text-center loginscreen  animated fadeInDown">
+        <div>
+            <div>
+                <h1 class="logo-name">H+</h1>
+            </div>
+            <h3>欢迎使用 H+</h3>
+            <form class="m-t" role="form">
+                <div class="form-group">
+                    <input id="txt_account" type="text" class="form-control" placeholder="用户名" required="">
+                </div>
+                <div class="form-group">
+                    <input id="txt_password" type="password" class="form-control" placeholder="密码" required="">
+                </div>
+                <div class="form-group">
+                    <input id="txt_code" type="text" class="form-control" placeholder="验证码" required="" style="width:60%;float:left;">
+                    <div style="width: 110px; float: right;  padding-left: 14px;">
+                        <img id="imgcode" class="authcode" onclick="this.src = this.src+'?'" src="/Sys/Account/ValidateCode" width="80" height="35" />
+                    </div>
+                </div>
+                <div class="form-group" style="height:50px;">
+                </div>
+                <button id="login_button" type="button" class="btn btn-primary block full-width m-b"><span>登 录</span></button>
+            </form>
+            <div class="login_tips"></div>
+        </div>
+    </div>
+    <!-- 全局js -->
+    <script src="/Content/js/jquery.min.js?v=2.1.4"></script>
+    <script src="/Content/js/bootstrap.min.js?v=3.3.6"></script>
+    <script>
+        (function ($) {
+            $.login = {
+                formMessage: function (msg) {
+                    $('.login_tips').find('.tips_msg').remove();
+                    $('.login_tips').append('<div class="tips_msg"><i class="fa fa-question-circle"></i>' + msg + '</div>');
+                },
+                loginClick: function () {
+                    var $username = $("#txt_account");
+                    var $password = $("#txt_password");
+                    var $code = $("#txt_code");
+                    if ($username.val() == "") {
+                        $username.focus();
+                        $.login.formMessage("请输入用户名");
+                        return false;
+                    } else if ($password.val() == "") {
+                        $password.focus();
+                        $.login.formMessage("请输入密码");
+                        return false;
+                    } else if ($code.val() == "") {
+                        $code.focus();
+                        $.login.formMessage("请输入验证码");
+                        return false;
+                    } else {
+                        $("#login_button").attr("disabled", "disabled").find("span").text("loading...");
+                        $.ajax({
+                            url: "/Sys/Account/Login",
+                            data: { username: $username.val().trim(), password: $password.val().trim(), code: $code.val() },
+                            type: "POST",
+                            dataType: "json",
+                            success: function (data) {
+                                if (data.Status == 'y') {
+                                    $.login.formMessage("登录成功");
+                                } else {
+                                    $("#login_button").removeAttr("disabled").find("span").text("登 录");
+                                    $code.val("");
+                                    $.login.formMessage(data.msg);
+                                }
+                            }
+                        });
+                    }
+                },
+                init: function () {
+                    $("#login_button").click(function () {
+                        $.login.loginClick();
+                    });
+                }
+            };
+            $(function () {
+                $.login.init();
+            })
+        })(jQuery)
+    </script>
+</body>
+</html>

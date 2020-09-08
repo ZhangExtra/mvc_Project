@@ -8,3 +8,4 @@ E:\张伟\MVC从入门到精通\wkmvc\Domain\obj\Debug\Domain.csproj.CoreCompile
 E:\张伟\MVC从入门到精通\wkmvc\Domain\obj\Debug\Domain.csproj.CopyComplete
 E:\张伟\MVC从入门到精通\wkmvc\Domain\obj\Debug\Domain.dll
 E:\张伟\MVC从入门到精通\wkmvc\Domain\obj\Debug\Domain.pdb
+E:\张伟\MVC从入门到精通\wkmvc\Domain\obj\Debug\Domain.csprojAssemblyReference.cache

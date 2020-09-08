@@ -1,5 +1,3 @@
-E:\张伟\MVC从入门到精通\wkmvc\WebPage\obj\Debug\WebPage.csprojAssemblyReference.cache
-E:\张伟\MVC从入门到精通\wkmvc\WebPage\obj\Debug\WebPage.csproj.CoreCompileInputs.cache
 E:\张伟\MVC从入门到精通\wkmvc\WebPage\bin\log4net.config
 E:\张伟\MVC从入门到精通\wkmvc\WebPage\bin\WebPage.dll.config
 E:\张伟\MVC从入门到精通\wkmvc\WebPage\bin\WebPage.dll
@@ -58,6 +56,7 @@ E:\张伟\MVC从入门到精通\wkmvc\WebPage\bin\Data.dll
 E:\张伟\MVC从入门到精通\wkmvc\WebPage\bin\Domain.dll
 E:\张伟\MVC从入门到精通\wkmvc\WebPage\bin\EntityFramework.SqlServer.dll
 E:\张伟\MVC从入门到精通\wkmvc\WebPage\bin\log4net.dll
+E:\张伟\MVC从入门到精通\wkmvc\WebPage\bin\Mapping.dll
 E:\张伟\MVC从入门到精通\wkmvc\WebPage\bin\Microsoft.AspNet.TelemetryCorrelation.dll
 E:\张伟\MVC从入门到精通\wkmvc\WebPage\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 E:\张伟\MVC从入门到精通\wkmvc\WebPage\bin\Microsoft.Web.Infrastructure.dll
@@ -81,6 +80,7 @@ E:\张伟\MVC从入门到精通\wkmvc\WebPage\bin\WebGrease.dll
 E:\张伟\MVC从入门到精通\wkmvc\WebPage\bin\Common.pdb
 E:\张伟\MVC从入门到精通\wkmvc\WebPage\bin\Data.pdb
 E:\张伟\MVC从入门到精通\wkmvc\WebPage\bin\Domain.pdb
+E:\张伟\MVC从入门到精通\wkmvc\WebPage\bin\Mapping.pdb
 E:\张伟\MVC从入门到精通\wkmvc\WebPage\bin\Service.pdb
 E:\张伟\MVC从入门到精通\wkmvc\WebPage\bin\Common.Logging.pdb
 E:\张伟\MVC从入门到精通\wkmvc\WebPage\bin\Common.Logging.xml
@@ -116,8 +116,8 @@ E:\张伟\MVC从入门到精通\wkmvc\WebPage\bin\zh-Hans\System.Web.Razor.resou
 E:\张伟\MVC从入门到精通\wkmvc\WebPage\bin\zh-Hans\System.Web.WebPages.resources.dll
 E:\张伟\MVC从入门到精通\wkmvc\WebPage\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
 E:\张伟\MVC从入门到精通\wkmvc\WebPage\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+E:\张伟\MVC从入门到精通\wkmvc\WebPage\obj\Debug\WebPage.csprojAssemblyReference.cache
+E:\张伟\MVC从入门到精通\wkmvc\WebPage\obj\Debug\WebPage.csproj.CoreCompileInputs.cache
 E:\张伟\MVC从入门到精通\wkmvc\WebPage\obj\Debug\WebPage.csproj.CopyComplete
 E:\张伟\MVC从入门到精通\wkmvc\WebPage\obj\Debug\WebPage.dll
 E:\张伟\MVC从入门到精通\wkmvc\WebPage\obj\Debug\WebPage.pdb
-E:\张伟\MVC从入门到精通\wkmvc\WebPage\bin\Mapping.dll
-E:\张伟\MVC从入门到精通\wkmvc\WebPage\bin\Mapping.pdb
